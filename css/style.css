@@ -52,6 +52,28 @@
 ul{
     list-style: none;
 }
+/*FILTERS*/
+
+form{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}  
+fieldset{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #b8237c;
+    font-weight: 800;
+    display: flex;
+  flex-direction: row;
+    font-size: 1em;
+    width: 20em;
+    border-radius: 0.2em;
+    justify-content: center;
+}
 /*HEADER*/
 .header-logo{
     position: relative;
@@ -222,6 +244,7 @@ ul{
     padding: 0.5em;
     font-weight: 700;
     
+    
 }  
 /* Hamburguer ENDED SEARCHBOX STARTS*/
 .search-box{
@@ -265,7 +288,7 @@ input[type=text]{
 .title-shop{
   position: relative;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
     font-family:Inter;
     margin: 0 2.5rem;
     color:black;
