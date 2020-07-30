@@ -1,380 +1,293 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sliner Skateboard</title>
-    <meta name="description" content="Toronto based brand  committed to the  edge of Surf culture  & Beach Fashion ">
-    <meta name="author" content="Adrin Machado">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    
-    <!-- Remember to update the values in [square braces] above -->
-  </head>
-  <body>
-    <header>
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <main>
-      <nav class="topbar">
-        <a href="index.html"><img class= "header-logo" src="img/SinerAppleBlack-01.svg" alt="Sliner LOGO"></a>  
-          </div>
-        </div> 
-        <div class="menu-wrap">
-          <input type="checkbox" class="toggler">
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
-            <div>
-          <div>
-          <div>
-            <div class="search-box">
-              <input type="text" placeholder="SEARCH" class="search-txt">
-              <a href="#" class="search-btn">
-                      <i class="fas fa-search"></i>
-              </a>
-          </div>
-          <li><a href="#">CLOTHING</a>
-            <ul>
-              <li><a  href="#">Tees</a></li>
-              <li><a  href="#">Hoodies</a></li>
-              <li><a href="#">Hats</a></li>
-            </ul>
-          </li>
-          <li><a href="#">JEWELERY</a></li>
-          <li><a href="#">DECKS</a></li>
-        </ul>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Sliner Skateboards</title>
+  <meta name="description" content="Sliner Store">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="/assets/Inter-Black-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-Bold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-ExtraBold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-ExtraLight-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-Light-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-Medium-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-Regular-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-SemiBold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/assets/Inter-Thin-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+  <header class="showcase">
+    <a href="index.html"><img class= "header-logo" src="img/SinerAppleBlack-01.svg" alt="Sliner LOGO"></a>  
+    <div class="container showcase-inner">
+      <p>Toronto based brand  committed to the  edge of Surf culture  & Beach Fashion</p>
+      <a href="#" class="btn2">Read More</a>
     </div>
-    </div>
-    </div>
-  </div>
-      <!-- Search for a product (non-functional) -->
-       
-      <nav!-- Additional nav links --></nav>
-      <ul>
-        
-        <li><a class="top-icons" href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a class="top-icons" href="#"><span class="material-icons">shopping_cart</span></a></li>
-      </ul>
     </header>
-  <main>
-     
-    <!-- Filtering product form -->
-        <form>
-          <div class="main">
-          <h2 >Filters</h2>
-          <fieldset>
-            <label for="sort">Show</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          </div>
-          <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-              </li>
-            </ol>
-          </fieldset>
-        </form>
-      </header>
+    <div class="search-box">
+      <input type="text" id="s" placeholder="SEARCH" class="search-txt">
+              <i class="fas fa-search"></i>
+    </div>
+      <select name="sort" id="sort">
+        <option value="">Sort</option>
+        <option value="newest">Latest Arrivals</option>
+        <option value="price-high">Lowest Price</option>
+        <option value="price-low">Highest Price</option>
+      </select>
+      <select name="size" id="sizes">
+        <option value="">Size</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="s">Small</option>
+      </select>
+      <select  name="color" id="colors">
+        <option value="">Colors</option>
+        <option value="">White</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="salmon">Salmon</option>
+        <option value="green">Green</option>
+      </select> 
+      <div class="cart pull-right">
+        <i class="cart-icon pull-right glyphicon glyphicon-shopping-cart"></i>
+    </div> 
+  <nav class="navegacao">
+  <div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="#">CLOTHING</a>
+                <li><a  href="#">Tees</a></li>
+                <li><a  href="#">Hoodies</a></li>
+                <li><a href="#">Hats</a></li>
+            <li><a href="#">JEWELERY</a></li>
+            <li><a href="#">DECKS</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+  </div>
+</nav>
+  <div class="main-bod">
+    <h1 class="results"> Results for </h1>
+          <h1 class="title-shop">Apple Collection </h1>
+          <h2 class="brief">Throwing it back, because great things start with an apple, don't believe me? Just ask Adam and Eve.</h2>
+ </div>
+ <!--PRODUCT 1 -->
+<div class="conter">
+  <article class="card">
+    <div class="card__image">
+  <img class="cover" src="img/teewhite.jpg" alt="Product White">
+</div>
+  <div class="card__content">
+    <div class="card__head">
+      <h2>Bite <br>
+        tee
+      </h2>
+      <p class="card__text"> Sliner's bringing  the epic Apple Collection. <br> Featuring a front  print design, the tee feels soft and lightweight, with the right amount of stretch. It's comfortable and flattering for both men and women.  </p>
+      <p class="card__price">$30.00</p>
+    </div>
+    <div class="card__choose">
+      <div class="card__size">
+        <label class="card__label">size</label>
+        <select name="size"  class="card__select">
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="x-large">XL</option>
+        </select>
+      </div>
+      <div class="card__color">
+        <label  class="card__label">color</label>        <span class="clr clr1"></span>
+        <span class="clr clr2"></span>
+      </div>  
+    </div>
+    <div class="card__counter">
+        <button class="card__numb" >-</button>
+        <input type="number" class="card__count" value="0">
+        <button class="card__numb" >+</button> 
+      </div>
+     <a href="#" class="btn btn--primary">add to cart</a>
+    </div>
+</article> 
+  <!--PRODUCT 2 -->
+  <article class="card">
+    <div class="card__image">
+  <img class="cover" src="img/teegreen.jpg" alt="Product Image">
+</div>
+  <div class="card__content">
+    <div class="card__head">
+      <h2>don't hiss <br>
+        me off tee
+      </h2>
+      <p class="card__text"> Your motto: don't hiss me off. <br>The apple collection graphic is printed onto the right chest and details on sleeves of a premium tee bound to keep you fresh in the hot months. </p>
+      <p class="card__price">$30.00</p>
+    </div>
+    <div class="card__choose">
+      <div class="card__size">
+        <label  class="card__label">size</label>
+        <select name="size"  class="card__select">
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="x-large">XL</option>
+        </select>
+      </div>
+      <div class="card__color">
+        <label  class="card__label">color</label>        <span class="clr clr5"></span>
+        <span class="clr clr4"></span>
+      </div>  
+    </div>
+    <div class="card__counter">
+        <button class="card__numb" >-</button>
+        <input type="number" class="card__count" value="0">
+        <button class="card__numb" >+</button> 
+      </div>
+     <a href="#" class="btn btn--primary">add to cart</a>
+    </div>
+</article> 
 
-      <section>
-        <h2>Results</h2>
-        <h1 class="title-shop">Apple Collection </h1>
-        <h2 class="brief"> Throwing it back, because great things start with an apple, don't believe me? Just ask Adam and Eve.</h2>
+  <!--PRODUCT 3 -->
+  <article class="card">
+    <div class="card__image">
+  <img class="cover" src="img/combotee.jpg" alt="Product Image">
+</div>
+  <div class="card__content">
+    <div class="card__head">
+      <h2>combo <br>
+        tee
+      </h2>
+      <p class="card__text"> Limited edition <br> 2 of the most exclusive Apple Collection Tees </p>
+      <p class="card__price">$48.90</p>
+    </div>
+    <div class="card__choose">
+      <div class="card__size">
+        <label  class="card__label">size</label>
+        <select name="size"  class="card__select">
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="x-large">XL</option>
+        </select>
+      </div>
+      <div class="card__color">
+        <label  class="card__label">color</label>        <span class="clr clr3"></span>
+        <span class="clr clr2"></span>
+      </div>  
+    </div>
+    <div class="card__counter">
+        <button class="card__numb" >-</button>
+        <input type="number" class="card__count" value="0">
+        <button class="card__numb" >+</button> 
+      </div>
+     <a href="#" class="btn btn--primary">add to cart</a>
+    </div>
+</article> 
 
-
-        <!-- Product 1 -->
-        <main class="main bd-grid">
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 2 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 3 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-  
-        <!-- Product 4 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-
-        <!-- Product 5 -->
-        <article>
-          <header>
-            <img src="img/product.jpg" alt="Product Image">
-          </header>
-          <h3>Product Name</h3>
-          <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-          <form>
-            <fieldset>
-              <legend>Colours</legend>
-              <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
-                <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
-              </ul>
-            </fieldset>
-
-            <fieldset>
-              <legend>Sizes</legend>
-              <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
-              </ol>
-            </fieldset>
-
-            <footer>
-              <dl>
-                <dt>Rating</dt>
-                <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-              </dl>
-              <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-              <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-              <button type="button"><span class="material-icons">favorite</span></button>
-              <a href="#">see more</a>
-            </footer>
-          </form>
-        </article>
-      </section>
-      <!-- FIRST SET OF PRODUCTS -->
-
-   <main class="main bd-grid">
-    <article class="card">
-    <div class="card__img">
-          <img src="./img/SlineHat.jpg" alt="White Tee">
-          </div>
-              <div class="card__name">
- <p>CRUMBS HAT</p>
-          </div>
-              <div class="card__price">
-                <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-                  <div>
-                    <span class="card__price card__price--before">$60.00</span>
-                    <span class="card__price card__price--now">45.00</span>
-                   </div>
-                     <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-                 </div>
-      </article>
-      <!-- PRODUCT 2 -->
- 
-             <article class="card">
-                 <div class="card__img">
-                     <img src="./img/totebag.jpg" alt="Hat PRODUCT">
-                 </div>
-                 <div class="card__name">
-                     <p>BITE TOTE</p>
-                 </div>
-                 <div class="card__price">
-                     <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
-                     <div>
-                         <span class="card__price card__price--before">$30.00</span>
-                         <span class="card__price card__price--now">$19.00</span>
-                     </div>
-                     <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
-                 </div>
-             </article>     
-
-    
-        <div class="showcase">
-          <div class="showcase-inner"> 
-          <img class= "center-logo" src="./img/slinerblack-01.svg" alt="logo for sliner">
-          <img class= "bottom-logo" src="./img/SlinerLogo-01.svg" alt="logo for sliner">
-          <h2 class="mainbrief"> Toronto based brand  committed to the  edge of Surf culture  & Beach Fashion</h2>
-          <a href="#" class="btn2">MEMBERS SIGN IN</a>
-            </div>
-      </section>
-    </main> <section role="navigation" aria-label="Pagination">
-      <p>1-5 of 23 products found</p>
-      <ol>
-        <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-        <li><a href="#" aria-label="Page 2">2</a></li>
-        <li><a href="#" aria-label="Page 3">3</a></li>
-        <li><a href="#" aria-label="Page 4">4</a></li>
-        <li><a href="#" aria-label="Page 5">5</a></li>
-      </ol>
-
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
+     <!--PRODUCT 4 -->
+     <article class="card">
+      <div class="card__image">
+    <img class="cover" src="img/SnakeHoodiePromo.jpg" alt="Product Image">
+  </div>
+    <div class="card__content">
+      <div class="card__head">
+        <h2>snake  <br>
+          hoodie
+        </h2>
+        <p class="card__text"> A premium sweatshirt  <br> Bound to keep you warm in the colder months. A pre-shrunk, classic fit sweater that's made with air-jet spun yarn for a soft feel and reduced pilling. </p>
+        <p class="card__price">$65.81</p>
+      </div>
+      <div class="card__choose">
+        <div class="card__size">
+          <label  class="card__label">size</label>
+          <select name="size"  class="card__select">
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="x-large">XL</option>
+          </select>
+        </div>
+        <div class="card__color">
+          <label  class="card__label">color</label>        <span class="clr clr9"></span>
+          <span class="clr clr8"></span>
+        </div>  
+      </div>
+      <div class="card__counter">
+          <button class="card__numb" >-</button>
+          <input type="number" class="card__count" value="0">
+          <button class="card__numb" >+</button> 
+        </div>
+       <a href="#" class="btn btn--primary">add to cart</a>
+      </div>
+  </article> 
+   <!--PRODUCT 5 -->
+   <article class="card">
+    <div class="card__image">
+  <img class="cover" src="img/SlineHat.jpg" alt="Product Image">
+</div>
+  <div class="card__content">
+    <div class="card__head">
+      <h2>crumbs <br>
+        Hat
+      </h2>
+      <p class="card__text"> Limited edition <br> 
         <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
-    </footer>
-
-  </body>
+          <li>Mens’ unstructured snapback hat.</li>
+        <li>5 panel unstructured style.</li>
+        <li> Arch logo woven label on front crown.</li>
+        <li>Soft flat bill.</li>
+        <li>Adjustable self fabric back closure.</li>
+        <li>Material: polyester.</li>
+      </ul> 
+      <p class="card__price">$20.00</p>
+    </div>
+    <div class="card__choose">
+      <div class="card__size">
+        <label  class="card__label">size</label>
+        <select name="size"  class="card__select">
+          <option value="small">S</option>
+          <option value="medium">M</option>
+          <option value="large">L</option>
+          <option value="x-large">XL</option>
+        </select>
+      </div>
+      <div class="card__color">
+        <label  class="card__label">color</label>        <span class="clr clr7"></span>
+        <span class="clr clr4"></span>
+      </div>  
+    </div>
+    <div class="card__counter">
+        <button class="card__numb" >-</button>
+        <input type="number" class="card__count" value="0">
+        <button class="card__numb" >+</button> 
+      </div>
+     <a href="#" class="btn btn--primary">add to cart</a>
+    </div>
+</article> 
+  </div>
+  <section class= "footer" role="navigation" aria-label="Pagination"></section>
+    <p class="results">5 of 23 products found</p>
+    <div class="paginas">
+    <ol>
+      <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
+    </ol>
+  </div>
+<footer>
+  <nav aria-label="Legal">
+  <p>&copy; Copyright, 2020.</p>
+    <ul>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Accessibility Policy</a></li>
+    </ul>
+</nav> 
+</footer>
+</body>
 </html>
+  
+         
