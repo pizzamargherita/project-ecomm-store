@@ -7,15 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"  crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="/assets/Inter-Black-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-Bold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-ExtraBold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-ExtraLight-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-Light-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-Medium-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-Regular-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-SemiBold-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/assets/Inter-Thin-slnt=0.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
@@ -30,19 +21,19 @@
       <input type="text" id="s" placeholder="SEARCH" class="search-txt">
               <i class="fas fa-search"></i>
     </div>
-      <select name="sort" id="sort">
+      <select  aria-label="size" name="sort" id="sort">
         <option value="">Sort</option>
         <option value="newest">Latest Arrivals</option>
         <option value="price-high">Lowest Price</option>
         <option value="price-low">Highest Price</option>
       </select>
-      <select name="size" id="sizes">
+      <select aria-label="size" name="size" id="sizes">
         <option value="">Size</option>
         <option value="m">Medium</option>
         <option value="l">Large</option>
         <option value="s">Small</option>
       </select>
-      <select  name="color" id="colors">
+      <select aria-label="color" name="color" id="colors">
         <option value="">Colors</option>
         <option value="">White</option>
         <option value="red">Red</option>
@@ -95,7 +86,7 @@
     <div class="card__choose">
       <div class="card__size">
         <label class="card__label">size</label>
-        <select name="size"  class="card__select">
+        <select aria-label="size" name="size"  class="card__select">
           <option value="small">S</option>
           <option value="medium">M</option>
           <option value="large">L</option>
@@ -131,7 +122,7 @@
     <div class="card__choose">
       <div class="card__size">
         <label  class="card__label">size</label>
-        <select name="size"  class="card__select">
+        <select aria-label="size" name="size"  class="card__select">
           <option value="small">S</option>
           <option value="medium">M</option>
           <option value="large">L</option>
@@ -162,13 +153,13 @@
       <h2>combo <br>
         tee
       </h2>
-      <p class="card__text"> Limited edition <br> 2 of the most exclusive Apple Collection Tees </p>
+      <p class="card__text"> Limited edition <br> 2 of the most exclusive Apple Collection Tees. Featuring a front  print design, the tee feels soft and lightweight, with the right amount of stretch. </p>
       <p class="card__price">$48.90</p>
     </div>
     <div class="card__choose">
       <div class="card__size">
         <label  class="card__label">size</label>
-        <select name="size"  class="card__select">
+        <select aria-label="size" name="size"  class="card__select">
           <option value="small">S</option>
           <option value="medium">M</option>
           <option value="large">L</option>
@@ -205,7 +196,7 @@
       <div class="card__choose">
         <div class="card__size">
           <label  class="card__label">size</label>
-          <select name="size"  class="card__select">
+          <select aria-label="size" name="size"  class="card__select">
             <option value="small">S</option>
             <option value="medium">M</option>
             <option value="large">L</option>
@@ -235,21 +226,14 @@
       <h2>crumbs <br>
         Hat
       </h2>
-      <p class="card__text"> Limited edition <br> 
-        <ul>
-          <li>Mens’ unstructured snapback hat.</li>
-        <li>5 panel unstructured style.</li>
-        <li> Arch logo woven label on front crown.</li>
-        <li>Soft flat bill.</li>
-        <li>Adjustable self fabric back closure.</li>
-        <li>Material: polyester.</li>
-      </ul> 
+      <p class="card__text"> Limited edition <br> Mens’ unstructured snapback hat with 5 panel unstructured style. Arch logo woven label on front crown and adjustable self fabric back closure.
+      </p>
       <p class="card__price">$20.00</p>
     </div>
     <div class="card__choose">
       <div class="card__size">
         <label  class="card__label">size</label>
-        <select name="size"  class="card__select">
+        <select aria-label="size" name="size"  class="card__select">
           <option value="small">S</option>
           <option value="medium">M</option>
           <option value="large">L</option>
@@ -271,7 +255,7 @@
 </article> 
   </div>
   <section class= "footer" role="navigation" aria-label="Pagination"></section>
-    <p class="results">5 of 23 products found</p>
+    <p class="results">5 of 5 products found</p>
     <div class="paginas">
     <ol>
       <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
@@ -279,7 +263,7 @@
   </div>
 <footer>
   <nav aria-label="Legal">
-  <p>&copy; Copyright, 2020.</p>
+  <p class="legend"> &copy; Copyright, 2020.</p>
     <ul>
       <li><a href="#">Terms of Use</a></li>
       <li><a href="#">Privacy Policy</a></li>

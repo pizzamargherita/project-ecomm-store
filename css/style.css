@@ -38,13 +38,14 @@
   }
  
  h2 {
-   font-size: 2em;
+   font-size: 2.4em;
    color: var(--clr-heading);
    text-transform: uppercase;
    letter-spacing: 2px;
    font-weight: 600;
+   margin-left: 0.5em;
    line-height: 1.2;
-   margin-bottom: .6em;
+   margin-bottom: 1em;
  }
  h4 {
    font-size: var(--fs-h4);
@@ -52,12 +53,17 @@
    font-weight: 500;
    text-transform: uppercase;
  }
+ p{
+ font-size: 1rem;
+ margin-left: 1.2em;
+ text-align: left;
+ }
    /*-- LAYOUT --*/
 .main-bod {
     padding: 1rem;
   }
   .results{
-      color: var(--primary-color);
+      color: var(--clr-heading);
       font-family: Inter;
       font-weight: 500;
       font-size: 1em;
@@ -79,7 +85,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    max-height: 100px;
+    max-height: 77px;
     position: fixed;
     background-color: white;
     padding:0.5em 0.5em 0.5em 0.5em;
@@ -110,15 +116,12 @@
   }
   input[type=text]{
     position: relative;
-    padding: 15px 40px 15px 20px;
     width: 200px;
     font-family: Inter;
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 800; 
     color: #b8237c;
     text-transform: uppercase;
-    font-size: 20px;
-    font-weight: 800;
     letter-spacing: 2px;
     border: none;
     border-radius: 5px;
@@ -158,10 +161,12 @@
     text-align: center;
     height: 100%;
   }
-  
+
   .showcase p {
-    font-size: 2.3rem;
-    padding: 0.3em 5em 0.3em 5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 0.8em;
+    text-align: center;
     margin-top: 5em;
   }
   .btn2 {
@@ -171,7 +176,9 @@
     background: var(--primary-color);
     background-color:#ff7f82 ;
     color: white;
+    font-size: 0.8em;
     font-weight: 700;
+    margin-bottom: 0.5em;
     border-radius: 2em;
     text-transform: uppercase;
     padding: 0.75rem 1.5rem;
@@ -205,11 +212,11 @@
   
   .menu-wrap .hamburger {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1em;
+    left:1em;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 1rem;
     background: var(--primary-color);
     display: flex;
@@ -338,8 +345,8 @@
   select{
     display: inline-block;
     overflow: hidden;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 700;
     height:35px;
     width: 90px;
     margin-left: 1em;
@@ -349,12 +356,15 @@
     border-color: #f7f7f7 #f7f7f7; 
     z-index: -2;
   }
+  select:hover {
+    opacity: 0.7;
+  }
 /*-- Apple Collection --*/
 
   .title-shop{
     position: relative;
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3.4rem;
     font-weight: 600;
     font-family:Inter;
     margin: 2rem 2.5rem;
@@ -440,19 +450,20 @@
     overflow: auto; 
   }
   .card{
-    margin: 0.2em 0;
+    margin: 0.2em 0;  
   }
   .card__image {
     margin-bottom:1em;
     max-width: 60em;
+    min-width: 50%;
    }
    .card__content {
     align-self: center;
     border: 2px black;
-    padding-top: 3em;
-    margin-right: 2em;
-    margin-right: 1em;
-    min-width: 40%;
+    padding-top:1em;
+    min-width: 50%;
+    margin: 1em
+    }
    }
    .card__content-special{
     align-self: right;
@@ -469,27 +480,37 @@
    ul{
     list-style-type: none;
     margin-left: 1.2em;
-    text-align: left;
-    font-size: 1.2rem;
-    color: #6f7373;
-    width: 80%;
-    line-height: 1.3;
+    text-align: left;;
     margin-bottom: 1em;
   }
+  .brief{
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #353133;
+}
+.card-img {
+  grid-column: 2;
+  margin-left: 2em;
+}
+
+ .card__select{
+     font-size: 1em;
+ }
    
    .card__price {
-     font-size: 2.8rem;
-     font-weight: 500;
+     font-size: 2.5rem;
+     text-align: right;
+     font-weight: 800;
      color: var(--primary-color);
    }
    .card__choose {
-     padding: 1em 0;
-     width: 50%; 
+     margin: 1em;
      display: flex;
      align-items: center;
-     justify-content: space-between;
-     padding: 0 .7em;
-     margin: 2em 0;
+     justify-content: center;
      position: relative;
    } 
    .card__choose::after {
@@ -499,7 +520,7 @@
      bottom: 0;
      left: 0;
      right: 0;
-     top: 4em;
+     top: 1em;
      border-bottom: 1px solid rgba(black, .2);
    }
    
@@ -509,28 +530,26 @@
      align-items: center;
      
    }
-   
    .card__label {
-     font-size: 1.8rem;
+     font-size: 1rem;
      font-weight: 500;
      color: var(--clr-heading);
      text-transform: uppercase;
-     margin-right: 1em;
    }
    
    .clr {
      display: inline-block;
-     margin-left:1.5em;
-     padding: 0.5;
-     width: 1rem;
-     height: 1rem;
+     margin-left:1em;
+     padding: 0.5em;
+    margin: 0.6em;
+     width:1.5rem;
+     height:1.5rem;
      border-radius: 50%;
      vertical-align: middle;
    } 
    .card__select {
     display: inline-block;  
-    width: 80px; 
-    padding: .4em 1em;
+    width: 70px; 
     appearance: none;
     color: black;
     background-color: #fff;
@@ -547,35 +566,23 @@
     outline-width: 2px;
   }
   
-  
   .card__counter {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%; 
-    margin-bottom: 2em;
-    padding: 1em .7em;
+    width:80%; 
+    margin-bottom: 0.5em;
+    margin-left: 10%;
   }
   
   .card__numb {
-    font-size: 3.5rem;
+    font-size: 1.8em;
     background: transparent;
-    padding: .1em .3em;
     appearance: none;
     border: none;
     cursor: pointer;
   }
   
-  .card__count {
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    margin: 0;
-  }
   
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -588,15 +595,14 @@
   } 
   .btn--primary {
     background-color: var(--clr-accent);
-    font-size:  1.8rem;
+    font-size:  1.5rem;
     text-transform: uppercase;
     width: 100%;
-    margin-bottom: 1em;
-    margin-left: 0.2em;
+    margin-bottom: 0.8em;
     color: white;
     font-weight: 800;
     display: inline-block;
-    padding: 1em 0;
+    padding: 0.8em 0;
     letter-spacing: 2px
   }
   
@@ -607,14 +613,14 @@
     height: 100%; 
   }
    .card__count {
-     font-size: 1rem;
+     font-size: 1em;
      font-weight: 500;
      text-align: center;
      -webkit-appearance: none;
      -moz-appearance: none;
      appearance: none;
      border: none;
-     margin: 0;
+     margin: 10%;
    }
    .clr1 {
     background-color: #efefef;
@@ -659,101 +665,236 @@
   
   }
  
-
-   /* Smallest-to-largest, using grid */
-   @media (min-width: 40em) {
-    .card {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 2em 5em 5em 2em;
-		grid-gap: 1em;
-    grid-auto-flow: column;
-	}
-    .card-img {
-      grid-column: 2;
-      margin: 2em;
-    }
-    .card__content {
-      margin: 5em
-    }
-    @media (max-width: 445px) {
-      .card {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-gap: 1em;
-      grid-auto-flow: column;
-    }
-    }
-      .card-img {
-        grid-column: 2;
-        margin-left: 2em;
-        margin-bottom: 0.01;
-      }
-      .card__content {
-        margin: 5em
-      }
-    }
-    h2 {
-      font-size: 4rem;
-      margin-left: 0.5em;
-      margin-top: 0.01em;
-    }
-    p {
-      font-size: 1rem;
-      margin-left: 1.2em;
-      text-align: left;
-    }
-
-    .brief{
-        font-size: 0.8em;
-        text-align: center;
-        margin-left: 2em;
-        margin-right: 2em;
-        color: #353133;
-    }
-     .cover {
-       width: 100%;
-     }
-     .card__select{
-         font-size: 0.8em;
-     }
-     .card__price{
-       font-weight: 800;
-       margin-left: 4em ;
-     }
-     .card__size{
-       font-size: 1.5em;
-       margin-left: 10%;
-       margin-right: 10%;
-     }
-     .card__count{
-         font-size: 1em;
-         margin-left: 10%;
-        margin-right: 10%;
-     }
-     .card__numb{
-       font-size: 1em;
-       padding: none;
-       margin-left: 10%;
-       margin-right: 10%;
-    }
-    .showcase p{
-      font-size: 1.2em;
-      font-weight: 700;
-      padding: 1.3em;
-      text-align: center;
-    }
-    .clr{
-      padding: 0.5em;
-      margin: 0.6em;
-    }
-    .menu-wrap .hamburger {
-      top: 1em;
-      left: 1em;
-      width: 50px;
-      height: 50px;
-    }
-    .header-logo{
-    max-height: 77px;
-    position: fixed;
+ /* Smallest-to-largest, using grid */
+ @media screen and (min-width: 375px) {/* Iphone X */
+  .brief{
+    font-size: 1.2em;
+}
+.showcase p {
+  font-size: 1.4em;
+}
+ .card__text {
+    font-size: 1em;
+ }
+  h2 {
+      font-size: 3em;
   }
+  .card__label {
+    font-size: 1.2rem;
+  }
+  .card__choose{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  }
+  ul{
+   font-size:  1em;
+  }
+   select{
+    font-size: 1.2em;
+    height:40px;
+    border-radius: 2em;
+   }
+    .btn2 {
+      font-size: 1.1em;
+      font-weight: 800;
+    }
+    .clr {
+      width:2rem;
+      height:2rem;
+    }
+    
+     
+    @media  (min-width: 768px)  {/* Ipad*/
+      .conter {
+        padding: 1em;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: row;
+      }
+      .card{
+        margin: none;
+      }
+      .card__content{
+        padding: 1em;
+       
+      }
+      .header-logo{
+        max-height: 120px;
+      }
+      .card__image{
+        padding: 1em;
+      }
+      .showcase {
+        min-height: 40vh;
+      }
+      .results{
+        font-size: 1.3em;
+      }
+      .cart{
+        top:1em;
+        margin-right: 5em;
+    }
+    .showcase-inner p{
+        margin-top: 20%;
+        padding-left: 4em;
+        padding-right: 4em;
+        font-weight: 700;
+       }
+       .showcase-inner p{
+        font-size: 1.5em; 
+        padding-left: 4em;
+      padding-right: 4em;
+       
+       }
+       .card__text{
+         height: 8em;
+         margin-left: 2em; 
+       }
+      .brief{
+        padding: 3em ;
+      }
+      h2{
+        padding: 0.5em;
+        font-size: 2em;
+    }
+
+    .menu-wrap .hamburger > div {
+      height: 3px;
+    
+    }
+  
+    .menu-wrap .hamburger > div::before,
+    .menu-wrap .hamburger > div::after {
+      height: 3px;
+    }
+  .menu-wrap .menu > div > div > ul > li {
+    font-size: 3em;
+  }
+  .menu-wrap .hamburger {
+    top: 2em;
+    left:2em;
+    width: 80px;
+    height: 80px;
+    padding: 2rem;
+  }
+  .menu-wrap .toggler {
+    width: 80px;
+    height: 80px;
+  }
+  .cart{
+    top:0em;
+    margin-right: 5em;
+}
+    }
+@media screen and (min-width: 1024px) {
+  h2{
+    font-size: 2em;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  li{
+    font-size: 1.5em;
+    margin-left: 2em;
+  }
+  .conter{
+    grid-template: none;
+  }
+  .card{
+    grid-template: none;
+    display: flex;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  .card__content {
+    padding-left: 8em;
+    padding-right: 8em;
+    max-width: 90em;
+  }
+  .card__text{
+    max-height: 30%;
+    font-size: 1em;
+  }
+  .card__price{
+    margin: 1em;
+  }
+  .card-img {
+    margin: 0 0 0 1em;
+    order: 2;
+    size: 40%;
+  }
+  .header-logo{
+    max-height: 140px;
+  }
+  .title-shop{
+    font-size:3em;
+  }
+  .brief{
+    font-size: 1.2em;
+  }
+  .showcase-inner p{
+   font-size: 1.5em; 
+   padding-left: 3em;
+ padding-right: 3em;
+  
+  }
+  .menu-wrap .hamburger {
+    top: 3em;
+    left:3em;
+    width:70px;
+    height:70px;
+    padding: 1.5rem;
+    
+}
+
+.menu-wrap .hamburger > div {
+  height: 5px;
+
+}
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  height: 5px;
+  
+}
+.menu-wrap .menu > div > div > ul > li {
+font-size: 2em;
+}
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+}
+input[type=text]{
+  font-size: 1.4em;
+  padding: 1em;
+}
+select{
+ font-size: 1.2em;
+ height:38px;
+ width: 100px;
+ border-radius: 2em;
+margin-left: 1.8em;
+}
+ .btn2 {
+   font-size: 1em;
+   margin-bottom: 1.5em;
+ }
+ .results{
+   font-size: 1.3em;
+   margin-left: 1.8em;
+ }
+ .legend{
+   margin-left: 2em;
+ }
+ 
