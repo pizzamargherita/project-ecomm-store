@@ -144,7 +144,7 @@
   }
   .showcase:before {
     content: '';
-    background: url(/img/palm-tree.jpg) no-repeat center center/cover;
+    background: url('/img/palm-tree.jpg') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
